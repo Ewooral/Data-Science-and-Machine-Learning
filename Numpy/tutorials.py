@@ -1,3 +1,4 @@
+# pip install numpy
 # import numpy
 import numpy as np
 
@@ -14,6 +15,9 @@ _3d = [[11, 22, 13], [14, 5, 16]]
 _3dnew = np.array(_3d, dtype=float)
 print(_3dnew)
 
+# Arithmetical Operations
+_sub = _3dnew - _2dnew
+print("Subtraction: ", _sub)
 
 
 # shape of array n x n, length
