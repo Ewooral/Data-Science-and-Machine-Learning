@@ -25,6 +25,10 @@ print("multiply: ", np.multiply(_3dnew, _2dnew))
 # comparison
 print(_2dnew > 4)
 
+
+# subsetting
+
+
 # shape of array n x n, length
 print(_2dnew.shape, len(_2dnew)) # 
 
