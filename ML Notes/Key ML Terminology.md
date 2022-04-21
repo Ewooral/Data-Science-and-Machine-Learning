@@ -11,17 +11,17 @@
 ## Labels
 A label is the thing we're predicting—the y variable in simple linear regression. The label could be the future price of wheat, the kind of animal shown in a picture, the meaning of an audio clip, or just about anything.
 
- ^ Y
- .
- .
- .
- .
- . LABEL
- .
- .
- .
- 0 .....................> X
-       FEATURE
+    ^ Y
+    .
+    .
+    .
+    .
+    . LABEL
+    .
+    .
+    .
+    0 .....................> X
+        FEATURE
 
 ## Features
 A feature is an input variable—the x variable in simple linear regression. A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features, specified as: *x1, x2,....,xn*
