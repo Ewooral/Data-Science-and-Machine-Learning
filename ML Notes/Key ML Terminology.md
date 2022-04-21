@@ -4,18 +4,30 @@
   
 # What is (supervised) machine learning? Concisely put, it is the following:
 
-    ML systems learn how to combine input to produce useful predictions on never-before-seen data.
+    ML systems learn how to create models that combine input to produce useful predictions on never-before-seen data.
 
 # Let's explore fundamental machine learning terminology.
 
 ## Labels
 A label is the thing we're predicting—the y variable in simple linear regression. The label could be the future price of wheat, the kind of animal shown in a picture, the meaning of an audio clip, or just about anything.
-Features
 
+ ^ Y
+ .
+ .
+ .
+ .
+ . LABEL
+ .
+ .
+ .
+ 0 .....................> X
+       FEATURE
+
+## Features
 A feature is an input variable—the x variable in simple linear regression. A simple machine learning project might use a single feature, while a more sophisticated machine learning project could use millions of features, specified as:
 
 In the spam detector example, the features could include the following:
-
+   
     words in the email text
     sender's address
     time of day the email was sent
