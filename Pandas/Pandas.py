@@ -1,4 +1,4 @@
-from pickle import FALSE
+from xmlrpc.client import Boolean, boolean
 import pandas as pd
 
 """
@@ -6,9 +6,9 @@ SERIES
 A one-dimensional labeled array capable of holding any data type
 """
 
-s = pd.Series([3, -5, 7, 4], index=['a', False, 'c', .34])
-print(s)
+S = pd.Series([3, -5, 7, 4], index=['a', False, 'c', .34])
 
+print(S)
 
 
 print("...........................................")
