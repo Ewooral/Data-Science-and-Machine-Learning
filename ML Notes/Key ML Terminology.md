@@ -91,15 +91,15 @@ Once we've trained our model with labeled examples, we use that model to predict
 
 A **regression model** predicts continuous values. For example, regression models make predictions that answer questions like the following:
 
-    What is the value of a house in California?
+    1. What is the value of a house in California?
 
-    What is the probability that a user will click on this ad?
+    2. What is the probability that a user will click on this ad?
 
 A **classification model** predicts discrete values. For example, classification models make predictions that answer questions like the following:
 
-    Is a given email message spam or not spam?
+    1. Is a given email message spam or not spam?
 
-    Is this an image of a dog, a cat, or a hamster?
+    2. Is this an image of a dog, a cat, or a hamster?
 
 ## Key Terms
 
