@@ -64,5 +64,6 @@ print(data_frame.iloc[0], ) # prints the second column of the table
 print("...........................................")
 # help(pd.concat)
 
+f = data_frame.drop("Country", axis=1)
 
-
+print(f)
