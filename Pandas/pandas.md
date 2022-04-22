@@ -12,7 +12,7 @@ homelessness is a DataFrame containing estimates of homelessness in each U.S. st
 
 
 
-Parts of a DataFrame
+## Parts of a DataFrame
 
 To better understand DataFrame objects, it's useful to know that they consist of three components, stored as attributes:
 
@@ -30,3 +30,36 @@ Instructions
     Print a 2D NumPy array of the values in homelessness.
     Print the column names of homelessness. (.columns)
     Print the index of homelessness.(.index)
+
+
+.....................................................................................................
+## SORTING AND SUBSETTING
+
+Sorting rows
+
+Finding interesting bits of data in a DataFrame is often easier if you change the order of the rows. You can sort the rows by passing a column name to .sort_values().
+
+In cases where rows have the same value (this is common if you sort on a categorical variable), you may wish to break the ties by sorting on another column. You can sort on multiple columns in this way by passing a list of column names.
+Sort on … 	Syntax
+one column 	df.sort_values("breed")
+multiple columns 	df.sort_values(["breed", "weight_kg"])
+
+By combining .sort_values() with .head(), you can answer questions in the form, "What are the top cases where…?".
+
+homelessness is available and pandas is loaded as pd.
+Instructions 1/3
+35 XP
+
+    1
+        Sort homelessness by the number of homeless individuals, from smallest to largest, and save this as homelessness_ind.
+        Print the head of the sorted DataFrame.
+
+2
+
+    Sort homelessness by the number of homeless family_members in descending order, and save this as homelessness_fam.
+    Print the head of the sorted DataFrame.
+
+3
+
+    Sort homelessness first by region (ascending), and then by number of family members (descending). Save this as homelessness_reg_fam.
+    Print the head of the sorted DataFrame.
