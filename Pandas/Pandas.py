@@ -6,8 +6,15 @@ A one-dimensional labeled array capable of holding any data type
 """
 
 S = pd.Series([3, -5, 7, 4], index=['a', False, 'c', .34])
+H = pd.Series([3, -5, 7, 4])
 
 print(S)
+print("...........................................")
+print(f"{H}")
+
+A = H[3] * 2
+print(f"Product: {A}")
+
 
 
 print("...........................................")
@@ -26,6 +33,7 @@ data = {
 }
 
 
+
 na = ['Elijah', 'Elisha', 'Mary', 'Emma', 'David']
 addr = ['London, UK', 'Canada', 'China', 'Germany, Hamburg', 'USA']
 cont = [+44555332384, +12300444833, +86747282993, +46729882939, +12283489304]
@@ -42,8 +50,11 @@ dic = {
     "OCCUPATION": occup
 }
 
-newDic = pd.DataFrame(dic)
-print(newDic)
+
+newDic1 = pd.DataFrame(dic)
+newDic1.to_csv("familyParticulars.csv")
+# pd.read_csv(newDic1)
+# print(newDic)
 print("...........................................")
 
 row_labels = ['ONE', 'TWO', 'THREE', 'FOUR']
@@ -51,6 +62,7 @@ row_labels = ['ONE', 'TWO', 'THREE', 'FOUR']
 data_frame = pd.DataFrame(data)
 
 print(data_frame)
+
 print("...........................................")
 
 data_frame.index = row_labels
