@@ -49,8 +49,8 @@ Use labeled examples to train the model. **In our spam detector** example, the l
 ### For example, the following table shows 5 labeled examples from a data set containing information about housing prices in California:
 
 
-    **housingMedianAge**| **totalRooms** | **totalBedrooms**    |     **medianHouseValue**    
-    (feature)              (feature)          (feature) 	         	 	(label)
+    housingMedianAge|   totalRooms   |      totalBedrooms      |       medianHouseValue      
+    (feature)            (feature)            (feature) 	         	 	(label)
                                                             
     15 	                   5612                 1283                         66900
     19 	                   7650 	            1901 	                     80100
@@ -64,7 +64,7 @@ An unlabeled example contains features but not the label. That is:
 
 ### Here are 3 unlabeled examples from the same housing dataset, which exclude medianHouseValue:
 
-    **housingMedianAge**| **totalRooms** | **totalBedrooms**     
+    housingMedianAge  |   totalRooms   |   totalBedrooms       
     (feature)              (feature)          (feature) 	         	 	
                                                             
     15 	                   5612                 1283                     
@@ -79,12 +79,14 @@ Once we've trained our model with labeled examples, we use that model to predict
 
 ## Models
 
-    A model defines the relationship between features and label. For example, a spam detection model might associate certain features strongly with "spam". Let's highlight two phases of a model's life:
+A model defines the relationship between features and label. For example, a spam detection model might associate certain features strongly with "spam". Let's highlight two phases of a model's life:
 
-## Training 
+    ## Training 
+
     means creating or learning the model. That is, you show the model labeled examples and enable the model to gradually learn the relationships between features and label.
 
-## Inference 
+    ## Inference 
+
     means applying the trained model to unlabeled examples. That is, you use the trained model to make useful predictions (y'). For example, during inference, you can predict medianHouseValue for new unlabeled examples.
 
 ### Regression vs. classification
