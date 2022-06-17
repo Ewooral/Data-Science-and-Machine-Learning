@@ -3,7 +3,7 @@
     It has long been known that crickets (an insect species) chirp more frequently on hotter days than on cooler days. For decades, professional and amateur scientists have cataloged data on chirps-per-minute and temperature. As a birthday gift, your Aunt Ruth gives you her cricket database and asks you to learn a model to predict this relationship. Using this data, you want to explore this relationship.
 
 First, examine your data by plotting it:
-Raw data of chirps/minute (x-axis) vs. temperature (y-axis).
+# Raw data of chirps/minute (x-axis) vs. temperature (y-axis).
 
 ## Figure 1. Chirps per Minute vs. Temperature in Celsius.
 
